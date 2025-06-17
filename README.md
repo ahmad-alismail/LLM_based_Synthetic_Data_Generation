@@ -98,8 +98,11 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [Evaluating Language Models as Synthetic Data Generators](https://arxiv.org/abs/2412.03679)                             | 12-2024 | a benchmark that evaluates LLMs’ abilities to generate synthetic data by comparing outputs from multiple models and analyzing quality metrics (e.g., perplexity, difficulty), revealing that data-generation prowess doesn’t always match problem-solving strength |
 | [On the Diversity of Synthetic Data and its Impact on Training Large Language Models](https://arxiv.org/abs/2410.15226) | 10-2024 | Introduces a diversity metric (“LLM cluster-agent”) to quantify synthetic data variety, demonstrating that data diversity boosts model performance—especially during fine-tuning—even for smaller-scale LLMs                                                       |
 | [Scaling Laws of Synthetic Data for Language Models](https://arxiv.org/abs/2503.19551)                                  | 03-2025 | Presents _SynthLLM_, a framework revealing that synthetic pre-training data follows power-law scaling up to 300B tokens, and larger LLMs require fewer synthetic tokens to reach optimal performance                                                               |
+
 # Related Repositories
 
-- [Awesome Synthetic Datasets](https://github.com/davanstrien/awesome-synthetic-datasets): Practical resources for building synthetic text and vision datasets.
-- [LLM Synthetic Data](https://github.com/wasiahmad/Awesome-LLM-Synthetic-Data/tree/main): Papers, tools, and blogs on LLM-generated data.
-- [LLM-Datasets](https://github.com/mlabonne/llm-datasets/tree/main): Curated datasets and tools for LLM post-training.
+| [Awesome Synthetic Datasets](https://github.com/davanstrien/awesome-synthetic-datasets) | Practical resources for building synthetic text and vision datasets. |
+| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| [LLM Synthetic Data](https://github.com/wasiahmad/Awesome-LLM-Synthetic-Data/tree/main) | Papers, tools, and blogs on LLM-generated data.                      |
+| [LLM-Datasets](https://github.com/mlabonne/llm-datasets/tree/main):                     | Curated datasets and tools for LLM post-training.                    |
+
