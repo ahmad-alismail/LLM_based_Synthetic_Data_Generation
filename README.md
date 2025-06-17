@@ -8,12 +8,25 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 
 ## Table of Contents
 
+- [Surveys](#surveys)
 - [SDG Methods](#sdg-methods)
   - [Traditional Architectures: Single LLM without External Tools](#traditional-architectures-single-llm-without-external-tools)
   - [Agentic Workflows](#agentic-workflows)
-- [Surveys](#surveys)
 - [Further Reading](#further-reading)
 - [Related Repositories](#related-repositories)
+
+# Surveys
+
+| Publication                                                                                                                                          | Date    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| [Synthetic Data Generation Using Large Language Models: Advances in Text and Code](https://arxiv.org/pdf/2503.14023)                                 | 03-2025 |
+| [Recent Advances in Large Langauge Model Benchmarks against Data Contamination: From Static to Dynamic Evaluation](https://arxiv.org/abs/2502.17521) | 02-2025 |
+| [A Survey on Data Synthesis and Augmentation for Large Language Models](https://arxiv.org/abs/2410.12896)                                            | 10-2024 |
+| [Data Augmentation Using LLMs: Data Perspectives, Learning Paradigms, and Challenges](https://aclanthology.org/2024.findings-acl.97/)                | 08-2024 |
+| [On LLMs- Driven Synthetic Data Generation, Curation, and Evaluation: A Survey](https://arxiv.org/abs/2406.15126)                                    | 06-2024 |
+| [Best Practices and Lessons Learned on Synthetic Data](https://arxiv.org/abs/2404.07503)                                                             | 04-2024 |
+| [A Survey on Data Augmentation in the Large Model Era](https://arxiv.org/abs/2401.15422)                                                             | 01-2024 |
+| [Comprehensive Exploration of Synthetic Data Generation: A Survey](https://arxiv.org/abs/2401.02524)                                                 | 01-2024 |
 
 # SDG Methods
 ## Traditional Architectures: Single LLM without External tools
@@ -78,18 +91,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [Synthetic data (almost) from scratch: Generalized instruction tuning for language models](https://arxiv.org/abs/2402.13064)                    | 02-2024 |
 | [Orca-math: Unlocking the potential of SLMs in grade school math](https://arxiv.org/abs/2402.14830)                                             | 02-2024 |
 | [Learning From Mistakes Makes LLM a Better Reasoner](https://arxiv.org/abs/2310.20689)                                                          | 10-2023 |
-# Surveys
 
-| Publication                                                                                                                                          | Date    |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| [Synthetic Data Generation Using Large Language Models: Advances in Text and Code](https://arxiv.org/pdf/2503.14023)                                 | 03-2025 |
-| [Recent Advances in Large Langauge Model Benchmarks against Data Contamination: From Static to Dynamic Evaluation](https://arxiv.org/abs/2502.17521) | 02-2025 |
-| [A Survey on Data Synthesis and Augmentation for Large Language Models](https://arxiv.org/abs/2410.12896)                                            | 10-2024 |
-| [Data Augmentation Using LLMs: Data Perspectives, Learning Paradigms, and Challenges](https://aclanthology.org/2024.findings-acl.97/)                | 08-2024 |
-| [On LLMs- Driven Synthetic Data Generation, Curation, and Evaluation: A Survey](https://arxiv.org/abs/2406.15126)                                    | 06-2024 |
-| [Best Practices and Lessons Learned on Synthetic Data](https://arxiv.org/abs/2404.07503)                                                             | 04-2024 |
-| [A Survey on Data Augmentation in the Large Model Era](https://arxiv.org/abs/2401.15422)                                                             | 01-2024 |
-| [Comprehensive Exploration of Synthetic Data Generation: A Survey](https://arxiv.org/abs/2401.02524)                                                 | 01-2024 |
 # Further Reading
 
 
