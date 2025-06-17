@@ -1,114 +1,105 @@
-# A Survey of LLM-Based Methods for Synthetic Data Generation and the Rise of Agentic Workflows
 
-## Abstract
-The increasing reliance on high-quality datasets for artificial intelligence (AI) development highlights the need for synthetic data generation (SDG) to address data scarcity, privacy concerns, and acquisition costs. Large language models (LLMs) have emerged as key tools for SDG, enabling automated synthesis of diverse, high-quality data. Recent advancements introduce **agentic workflows**, where multiple LLM-powered agents collaborate to generate high-quality synthetic data. This survey systematically examines **architectural approaches** in LLM-based SDG, comparing **traditional single-LLM methods** with **agentic multi-agent workflows**. We analyze their differences in **efficiency, scalability, and data quality**, highlighting their strengths and limitations. Additionally, we identify key research gaps and propose future directions, including **workflow automation, open-source model integration, and improvements in data diversity**. By maintaining an up-to-date repository of research, tools, and datasets, this work serves as a resource for advancing SDG methodologies and optimizing AI-driven data synthesis.
+# Synthetic Data
+As AI systems become increasingly data-hungry, the need for high-quality datasets has never been greater. However, real-world data collection faces major challenges: scarcity, privacy constraints, and high acquisition costs. Synthetic Data Generation (SDG) offers a compelling alternative—creating artificial data that mimics real-world patterns without the associated drawbacks.
 
-## Contents
-# References from "A Survey of LLM-Based Methods for Synthetic Data Generation and the Rise of Agentic Workflows"
+> 📌 This repository complements the survey [*A Survey of LLM-Based Methods for Synthetic Data Generation and the Rise of Agentic Workflows*](https://link.springer.com/chapter/10.1007/978-3-031-93418-6_9) by Ahmad Alismail and Carsten Lanquillon. It is a continuously updated resource collecting references on LLM-based synthetic data generation—supporting ongoing learning and collaboration in the research community.  
+> 💡 If you’d like to contribute or suggest additions, feel free to open a pull request or issue!
 
 
-1.  Abay, N.C., Zhou, Y., Kantarcioglu, M., Thuraisingham, B., Sweeney, L.: Privacy-Preserving Synthetic Data Release Using Deep Learning. In: Machine Learning and Knowledge Discovery in Databases: European Conference, ECML PKDD 2018, Dublin, Ireland, September 10–14, 2018, Proceedings, Part I. pp. 510–526. Springer (2019)
-2.  Abdin, M., Aneja, J., Behl, H., Bubeck, S., Eldan, R., Gunasekar, S., Harrison, M., Hewett, R.J., Javaheripi, M., Kauffmann, P., et al.: Phi-4 Technical Report (2024)
-3.  Achiam, J., Adler, S., Agarwal, S., Ahmad, L., Akkaya, I., Aleman, F.L., Almeida, D., Altenschmidt, J., Altman, S., Anadkat, S., et al.: GPT-4 Technical Report (2023)
-4.  AI@Meta: LLaMA 3 Model Card (2024), [https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md](https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md)
-5.  Alismail, A., Lanquillon, C.: LLM-Based Synthetic Data Generation Repository (2025), [https://github.com/ahmad-alismail/LLM_based_Synthetic_Data_Generation](https://github.com/ahmad-alismail/LLM_based_Synthetic_Data_Generation), accessed: 2025-01-31
-6.  An, S., Ma, Z., Lin, Z., Zheng, N., Lou, J.G., Chen, W.: Learning From Mistakes Makes LLM a Better Reasoner (2023)
-7.  Anil, R., Dai, A.M., Firat, O., Johnson, M., Lepikhin, D., Passos, A., Shakeri, S., Taropa, E., Bailey, P., Chen, Z., et al.: PaLM 2 Technical Report (2023)
-8.  Anthropic: Claude 2 (2023), [https://www.anthropic.com/news/claude-2](https://www.anthropic.com/news/claude-2), accessed: 2025-01-23
-9.  Arif, S., Farid, S., Azeemi, A.H., Athar, A., Raza, A.A.: The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation (2024)
-10. Babbar, R., Schölkopf, B.: Data Scarcity, Robustness, and Extreme Multi-Label Classification. Machine Learning 108(8–9), 1329–1351 (Sep 2019). [https://doi.org/10.1007/s10994-019-05791-5](https://doi.org/10.1007/s10994-019-05791-5)
-11. Bisbee, J., Clinton, J.D., Dorff, C., Kenkel, B., Larson, J.M.: Synthetic Replacements for Human Survey Data? The Perils of Large Language Models. Political Analysis 32(4), 401–416 (2024)
-12. Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J.D., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., et al.: Language Models Are Few-Shot Learners. Advances in Neural Information Processing Systems 33, 1877–1901 (2020)
-13. Budach, L., Feuerpfeil, M., Ihde, N., Nathansen, A., Noack, N., Patzlaff, H., Naumann, F., Harmouch, H.: The Effects of Data Quality on Machine Learning Performance (2022)
-14. Butt, N., Chandrasekaran, V., Joshi, N., Nushi, B., Balachandran, V.: BenchAgents: Automated Benchmark Creation With Agent Interaction (2024)
-15. Chen, L., Li, S., Yan, J., Wang, H., Gunaratna, K., Yadav, V., Tang, Z., Srinivasan, V., Zhou, T., Huang, H., et al.: AlpaGaSuS: Training a Better Alpaca with Fewer Data (2023)
-16. Chen, L., Zaharia, M., Zou, J.: How Is ChatGPT’s Behavior Changing Over Time? (2023)
-17. Chen, W., Ma, X., Wang, X., Cohen, W.W.: Program of Thoughts Prompting: Disentangling Computation From Reasoning for Numerical Reasoning Tasks (2022)
-18. Chen, Z., Gao, Q., Bosselut, A., Sabharwal, A., Richardson, K.: DISCO: Distilling Counterfactuals With Large Language Models (2022)
-19. Chen, Z., Tang, J., Chen, X., Lin, Y.: A Survey on Large Language Model-Based Autonomous Agents (2023)
-20. Chen, Z., Deng, Y., Yuan, H., Ji, K., Gu, Q.: Self-Play Fine-Tuning Converts Weak Language Models to Strong Language Models (2024)
-21. Cheng, Y., Zhang, C., Zhang, Z., Meng, X., Hong, S., Li, W., Wang, Z., Wang, Z., Yin, F., Zhao, J., et al.: Exploring Large Language Model-Based Intelligent Agents: Definitions, Methods, and Prospects (2024), [https://arxiv.org/abs/2401.03428](https://arxiv.org/abs/2401.03428)
-22. Cheng, Y., Zhang, C., Zhang, Z., Meng, X., Hong, S., Li, W., Wang, Z., Wang, Z., Yin, F., Zhao, J., et al.: Exploring Large Language Model-Based Intelligent Agents: Definitions, Methods, and Prospects (2024)
-23. Cui, G., Yuan, L., Ding, N., Yao, G., He, B., Zhu, W., Ni, Y., Xie, G., Xie, R., Lin, Y., et al.: UltraFeedback: Boosting Language Models With Scaled AI Feedback. In: Forty-First International Conference on Machine Learning (2024)
-24. Dai, H., Liu, Z., Liao, W., Huang, X., Cao, Y., Wu, Z., Zhao, L., Xu, S., Liu, W., Liu, N., et al.: AugGPT: Leveraging ChatGPT for Text Data Augmentation (2023)
-25. Desai, A., Freeman, C., Wang, Z., Beaver, I.: TimeVAE: A Variational Auto-Encoder for Multivariate Time Series Generation (2021)
-26. Ding, B., Qin, C., Zhao, R., Luo, T., Li, X., Chen, G., Xia, W., Hu, J., Luu, A.T., Joty, S.: Data Augmentation Using LLMs: Data Perspectives, Learning Paradigms, and Challenges (2024)
-27. Dixit, T., Paranjape, B., Hajishirzi, H., Zettlemoyer, L.: CORE: A Retrieve-Then-Edit Framework for Counterfactual Data Generation (2022)
-28. Eldan, R., Li, Y.: TinyStories: How Small Can Language Models Be and Still Speak Coherent English? (2023)
-29. Feng, S.Y., Goodman, N.D., Frank, M.C.: Is Child-Directed Speech Effective Training Data for Language Models? (2024)
-30. Ge, T., Chan, X., Wang, X., Yu, D., Mi, H., Yu, D.: Scaling synthetic data creation with 1,000,000,000 personas. arXiv preprint arXiv:2406.20094 (2024)
-31. Gilardi, F., Alizadeh, M., Kubli, M.: ChatGPT Outperforms Crowd Workers for Text-Annotation Tasks. Proceedings of the National Academy of Sciences 120(30), e2305016120 (2023)
-32. Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., Bengio, Y.: Generative Adversarial Nets. Advances in Neural Information Processing Systems 27 (2014)
-33. Gudibande, A., Wallace, E., Snell, C., Geng, X., Liu, H., Abbeel, P., Levine, S., Song, D.: The False Promise of Imitating Proprietary LLMs (2023)
-34. Gunasekar, S., Zhang, Y., Aneja, J., Mendes, C.C.T., Del Giorno, A., Gopi, S., Javaheripi, M., Kauffmann, P., de Rosa, G., Saarikivi, O., et al.: Textbooks Are All You Need (2023)
-35. Guo, D., Yang, D., Zhang, H., Song, J., Zhang, R., Xu, R., Zhu, Q., Ma, S., Wang, P., Bi, X., et al.: DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning (2025)
-36. Guo, S., Zhang, B., Liu, T., Liu, T., Khalman, M., Llinares, F., Rame, A., Mesnard, T., Zhao, Y., Piot, B., et al.: Direct Language Model Alignment From Online AI Feedback (2024)
-37. Guo, T., Chen, X., Wang, Y., Chang, R., Pei, S., Chawla, N.V., Wiest, O., Zhang, X.: Large Language Model-Based Multi-Agents: A Survey of Progress and Challenges (2024)
-38. Guo, T., Chen, X., Wang, Y., Chang, R., Pei, S., Chawla, N.V., Wiest, O., Zhang, X.: Large Language Model-Based Multi-Agents: A Survey of Progress and Challenges (2024)
-39. Huang, Z., Zou, H., Li, X., Liu, Y., Zheng, Y., Chern, E., Xia, S., Qin, Y., Yuan, W., Liu, P.: O1 Replication Journey—Part 2: Surpassing O1-Preview Through Simple Distillation, Big Progress or Bitter Lesson? (2024)
-40. Ji, J., Liu, M., Dai, J., Pan, X., Zhang, C., Bian, C., Chen, B., Sun, R., Wang, Y., Yang, Y.: BeaverTails: Towards Improved Safety Alignment of LLMs via a Human-Preference Dataset. Advances in Neural Information Processing Systems 36 (2024)
-41. Jiang, A.Q., Sablayrolles, A., Mensch, A., Bamford, C., Chaplot, D.S., Casas, D.d.l., Bressand, F., Lengyel, G., Lample, G., Saulnier, L., et al.: Mistral 7B (2023)
-42. Jiang, A.Q., Sablayrolles, A., Roux, A., Mensch, A., Savary, B., Bamford, C., Chaplot, D.S., Casas, D.d.l., Hanna, E.B., Bressand, F., et al.: Mixtral of Experts (2024)
-43. Jordon, J., Szpruch, L., Houssiau, F., Bottarelli, M., Cherubin, G., Maple, C., Cohen, S.N., Weller, A.: Synthetic Data—What, Why, and How? (2022)
-44. Kingma, D.P.: Auto-Encoding Variational Bayes (2013)
-45. Kurapati, S., Gilli, L.: Synthetic Data: A Convergence Between Innovation and GDPR. Journal of Open Access Law 11, 1 (2023)
-46. Lee, N., Wattanawong, T., Kim, S., Mangalam, K., Shen, S., Anumanchipalli, G., Mahoney, M.W., Keutzer, K., Gholami, A.: LLM2LLM: Boosting LLMs With Novel Iterative Data Enhancement (2024)
-47. Li, G., Hammoud, H., Itani, H., Khizbullin, D., Ghanem, B.: CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society. Advances in Neural Information Processing Systems 36, 51991–52008 (2023)
-48. Li, H., Dong, Q., Tang, Z., Wang, C., Zhang, X., Huang, H., Huang, S., Huang, X., Huang, Z., Zhang, D., et al.: Synthetic Data (Almost) From Scratch: Generalized Instruction Tuning for Language Models (2024)
-49. Li, M., Shi, T., Ziems, C., Kan, M.Y., Chen, N.F., Liu, Z., Yang, D.: CoAnnotating: Uncertainty-Guided Work Allocation Between Human and Large Language Models for Data Annotation (2023)
-50. Li, Y., Bubeck, S., Eldan, R., Del Giorno, A., Gunasekar, S., Lee, Y.T.: Textbooks Are All You Need II: Phi-1.5 Technical Report (2023)
-51. Ling, Y., Jiang, X., Kim, Y.: MALLM-GAN: Multi-Agent Large Language Model as Generative Adversarial Network for Synthesizing Tabular Data (2024)
-52. Liu, B., Bubeck, S., Eldan, R., Kulkarni, J., Li, Y., Nguyen, A., Ward, R., Zhang, Y.: TinyGSM: Achieving >80% on GSM8K With Small Language Models (2023)
-53. Liu, R., Wei, J., Liu, F., Si, C., Zhang, Y., Rao, J., Zheng, S., Peng, D., Yang, D., Zhou, D., et al.: Best Practices and Lessons Learned on Synthetic Data. In: First Conference on Language Modeling (2024)
-54. Long, L., Wang, R., Xiao, R., Zhao, J., Ding, X., Chen, G., Wang, H.: On LLMs-Driven Synthetic Data Generation, Curation, and Evaluation: A Survey (2024), [https://arxiv.org/abs/2406.15126](https://arxiv.org/abs/2406.15126)
-55. Luo, H., Sun, Q., Xu, C., Zhao, P., Lin, Q., Lou, J., Chen, S., Tang, Y., Chen, W.: Arena Learning: Build Data Flywheel for LLMs Post-Training via Simulated Chatbot Arena (2024)
-56. Luo, Z., Xu, C., Zhao, P., Sun, Q., Geng, X., Hu, W., Tao, C., Ma, J., Lin, Q., Jiang, D.: WizardCoder: Empowering Code Large Language Models With Evol-Instruct (2023)
-57. Maini, P., Seto, S., Bai, H., Grangier, D., Zhang, Y., Jaitly, N.: Rephrasing the Web: A Recipe for Compute and Data-Efficient Language Modeling (2024)
-58. Mitra, A., Del Corro, L., Mahajan, S., Codas, A., Simoes, C., Agarwal, S., Chen, X., Razdaibiedina, A., Jones, E., Aggarwal, K., et al.: Orca 2: Teaching Small Language Models How to Reason (2023)
-59. Mitra, A., Del Corro, L., Zheng, G., Mahajan, S., Rouhana, D., Codas, A., Lu, Y., Chen, W.g., Vrousgos, O., Rosset, C., et al.: AgentInstruct: Toward Generative Teaching with Agentic Flows (2024)
-60. Mitra, A., Khanpour, H., Rosset, C., Awadallah, A.: Orca-Math: Unlocking the Potential of SLMs in Grade School Math (2024)
-61. Mukherjee, S., Mitra, A., Jawahar, G., Agarwal, S., Palangi, H., Awadallah, A.: Orca: Progressive Learning from Complex Explanation Traces of GPT-4 (2023)
-62. OpenAI: Learning to Reason With Large Language Models (2024), [https://openai.com/index/learning-to-reason-with-llms/](https://openai.com/index/learning-to-reason-with-llms/), accessed: 2025-01-28
-63. OpenAI: OpenAI Terms of Use (2025), [https://openai.com/policies/terms-of-use/](https://openai.com/policies/terms-of-use/), accessed: 2025-01-31
-64. Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C., Mishkin, P., Zhang, C., Agarwal, S., Slama, K., Ray, A., et al.: Training Language Models to Follow Instructions With Human Feedback. Advances in Neural Information Processing Systems 35, 27730–27744 (2022)
-65. Park, N., Mohammadi, M., Gorde, K., Jajodia, S., Park, H., Kim, Y.: Data Synthesis Based on Generative Adversarial Networks (2018)
-66. Peng, B., Li, C., He, P., Galley, M., Gao, J.: Instruction Tuning With GPT-4 (2023)
-67. Qian, Z., Callender, T., Cebere, B., Janes, S.M., Navani, N., van der Schaar, M.: Synthetic Data for Privacy-Preserving Clinical Risk Prediction. Scientific Reports 14(1), 25676 (2024)
-68. Ri, R., Kiyono, S., Takase, S.: Self-Translate-Train: Enhancing Cross-Lingual Transfer of Large Language Models via Inherent Capability (2024)
-69. Schluntz, E., Zhang, B.: Building Effective Agents (2024), [https://www.anthropic.com/research/building-effective-agents](https://www.anthropic.com/research/building-effective-agents), Anthropic Research
-70. Shao, Z., Wang, P., Zhu, Q., Xu, R., Song, J., Bi, X., Zhang, H., Zhang, M., Li, Y., Wu, Y., et al.: DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models (2024)
-71. Shavit, Y., Agarwal, S., Brundage, M., Adler, S., O’Keefe, C., Campbell, R., Lee, T., Mishkin, P., Eloundou, T., Hickey, A., et al.: Practices for Governing Agentic AI Systems (2023)
-72. Shi, Z., Chen, X., Qiu, X., Huang, X.: Toward Diverse Text Generation With Inverse Reinforcement Learning (2018)
-73. Shumailov, I., Shumaylov, Z., Zhao, Y., Gal, Y., Papernot, N., Anderson, R.: The Curse of Recursion: Training on Generated Data Makes Models Forget (2023)
-74. Singh, A., Co-Reyes, J.D., Agarwal, R., Anand, A., Patil, P., Garcia, X., Liu, P.J., Harrison, J., Lee, J., Xu, K., et al.: Beyond Human Data: Scaling Self-Training for Problem-Solving With Language Models (2023)
-75. Sudalairaj, S., Bhandwaldar, A., Pareja, A., Xu, K., Cox, D.D., Srivastava, A.: LAB: Large-Scale Alignment for Chatbots (2024)
-76. Sutton, R.S., Barto, A.G.: Reinforcement Learning: An Introduction. MIT Press (2018)
-77. Taori, R., Gulrajani, I., Zhang, T., Dubois, Y., Li, X., Guestrin, C., Liang, P., Hashimoto, T.B.: Stanford Alpaca: An Instruction-Following LLaMA Model. [https://github.com/tatsu-lab/stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca) (2023)
-78. Team, G., Riviere, M., Pathak, S., Sessa, P.G., Hardin, C., Bhupatiraju, S., Hussenot, L., Mesnard, T., Shahriari, B., Ramé, A., et al.: Gemma 2: Improving Open Language Models at a Practical Size (2024)
-79. Tiwald, P., Ebert, A., Soukup, D.T.: Representative & Fair Synthetic Data (2021)
-80. Toshniwal, S., Moshkov, I., Narenthiran, S., Gitman, D., Jia, F., Gitman, I.: OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset (2024)
-81. Tunstall, L., Beeching, E., Lambert, N., Rajani, N., Rasul, K., Belkada, Y., Huang, S., von Werra, L., Fourrier, C., Habib, N., et al.: Zephyr: Direct Distillation of LM Alignment (2023)
-82. Van Den Oord, A., Dieleman, S., Zen, H., Simonyan, K., Vinyals, O., Graves, A., Kalchbrenner, N., Senior, A., Kavukcuoglu, K., et al.: WaveNet: A Generative Model for Raw Audio (2016)
-83. Villalobos, P., Ho, A., Sevilla, J., Besiroglu, T., Heim, L., Hobbhahn, M.: Position: Will We Run Out of Data? Limits of LLM Scaling Based on Human-Generated Data. In: Forty-First International Conference on Machine Learning (2024)
-84. Wang, B.: Mesh-Transformer-JAX: Model-Parallel Implementation of Transformer Language Model With JAX. [https://github.com/kingoflolz/mesh-transformer-jax](https://github.com/kingoflolz/mesh-transformer-jax) (May 2021)
-85. Wang, K., Zhu, J., Ren, M., Liu, Z., Li, S., Zhang, Z., Zhang, C., Wu, X., Zhan, Q., Liu, Q., et al.: A Survey on Data Synthesis and Augmentation for Large Language Models (2024)
-86. Wang, S., Long, Z., Fan, Z., Wei, Z., Huang, X.: Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation (2024)
-87. Wang, Y., Kordi, Y., Mishra, S., Liu, A., Smith, N.A., Khashabi, D., Hajishirzi, H.: Self-Instruct: Aligning Language Models With Self-Generated Instructions (2022)
-88. Wang, Z., Dong, Y., Zeng, J., Adams, V., Sreedhar, M.N., Egert, D., Delalleau, O., Scowcroft, J.P., Kant, N., Swope, A., et al.: HelpSteer: Multi-Attribute Helpfulness Dataset for SteerLM (2023)
-89. Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., Le, Q.V., Zhou, D., et al.: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. Advances in Neural Information Processing Systems 35, 24824–24837 (2022)
-90. Wiesinger, J., Marlow, P., Vuskovic, V.: Agents (2024), [https://www.kaggle.com/whitepaper-agents](https://www.kaggle.com/whitepaper-agents), Google Whitepaper
-91. Wu, Q., Bansal, G., Zhang, J., Wu, Y., Zhang, S., Zhu, E., Li, B., Jiang, L., Zhang, X., Wang, C.: AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework (2023)
-92. Xi, Z., Chen, W., Guo, X., He, W., Ding, Y., Hong, B., Zhang, M., Wang, J., Jin, S., Zhou, E., et al.: The Rise and Potential of Large Language Model-Based Agents: A Survey (2023)
-93. Xin, H., Guo, D., Shao, Z., Ren, Z., Zhu, Q., Liu, B., Ruan, C., Li, W., Liang, X.: DeepSeek-Prover: Advancing Theorem Proving in LLMs Through Large-Scale Synthetic Data (2024)
-94. Xu, C., Sun, Q., Zheng, K., Geng, X., Zhao, P., Feng, J., Tao, C., Jiang, D.: WizardLM: Empowering Large Language Models to Follow Complex Instructions (2023)
-95. Xu, C., Guo, D., Duan, N., McAuley, J.: Baize: An Open-Source Chat Model With Parameter-Efficient Tuning on Self-Chat Data (2023)
-96. Xu, Z., Jiang, F., Niu, L., Deng, Y., Poovendran, R., Choi, Y., Lin, B.Y.: Magpie: Alignment Data Synthesis From Scratch by Prompting Aligned LLMs With Nothing (2024)
-97. Yu, L., Zhang, W., Wang, J., Yu, Y.: SeqGAN: Sequence Generative Adversarial Nets With Policy Gradient. In: Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence. p. 2852–2858. AAAI’17, AAAI Press (2017)
-98. Yuan, L., Cui, G., Wang, H., Ding, N., Wang, X., Deng, J., Shan, B., Chen, H., Xie, R., Lin, Y., et al.: Advancing LLM Reasoning Generalists With Preference Trees (2024)
-99. Yue, X., Qu, X., Zhang, G., Fu, Y., Huang, W., Sun, H., Su, Y., Chen, W.: MAmmoTH: Building Math Generalist Models Through Hybrid Instruction Tuning (2023), [https://arxiv.org/abs/2309.05653](https://arxiv.org/abs/2309.05653)
-100. Zelikman, E., Wu, Y., Mu, J., Goodman, N.: STAR: Bootstrapping Reasoning With Reasoning. Advances in Neural Information Processing Systems 35, 15476–15488 (2022)
-101. Zha, D., Bhat, Z.P., Lai, K.H., Yang, F., Jiang, Z., Zhong, S., Hu, X.: Data-Centric Artificial Intelligence: A Survey. ACM Computing Surveys (2023)
-102. Zhang, K., Zeng, S., Hua, E., Ding, N., Chen, Z.R., Ma, Z., Li, H., Cui, G., Qi, B., Zhu, X., et al.: UltraMedical: Building Specialized Generalists in Biomedicine (2024)
-103. Zhang, K., Zhang, H., Li, G., Li, J., Li, Z., Jin, Z.: ToolCoder: Teach Code Generation Models to Use API Search Tools (2023)
-104. Zhou, Y., Guo, C., Wang, X., Chang, Y., Wu, Y.: A Survey on Data Augmentation in the Large Model Era (2024)
-105. Zhu, Y., Zhang, P., Haq, E., Hui, P., Tyson, G.: Can ChatGPT Reproduce Human-Generated Labels? A Study of Social Computing Tasks pp. 92–101 (2023)
+## Table of Contents
+
+- [SDG Methods](#sdg-methods)
+  - [Traditional Architectures: Single LLM without External Tools](#traditional-architectures-single-llm-without-external-tools)
+  - [Agentic Workflows](#agentic-workflows)
+- [Surveys](#surveys)
+- [Further Reading](#further-reading)
+- [Related Repositories](#related-repositories)
+
+# SDG Methods
+## Traditional Architectures: Single LLM without External tools
+
+| **Publication**                                                                                                                                                                                                           | **Date** |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [O1 Replication Journey – Part 2: Surpassing O1-preview through Simple Distillation Big Progress or Bitter Lesson?](https://arxiv.org/abs/2411.16489)                                                                     | 11-2024  |
+| [Self-Judge: Selective Instruction Following with Alignment Self-Evaluation](https://arxiv.org/abs/2409.00935)                                                                                                            | 09-2024  |
+| [Automated test generation to evaluate tool-augmented LLMs as conversational AI agents](https://arxiv.org/abs/2409.15934)                                                                                                 | 09-2024  |
+| [Is Child-Directed Speech Effective Training Data for Language Models?](https://arxiv.org/abs/2408.03617)                                                                                                                 | 08-2024  |
+| [Self-Translate-Train: Enhancing Cross-Lingual Transfer of Large Language Models via Inherent Capability](https://arxiv.org/abs/2407.00454)                                                                               | 07-2024  |
+| [Case2Code: Learning Inductive Reasoning with Synthetic Data](https://arxiv.org/abs/2407.12504)                                                                                                                           | 07-2024  |
+| [Scaling Synthetic Data Creation with 1,000,000,000 Personas](https://arxiv.org/abs/2406.20094)                                                                                                                           | 06-2024  |
+| [Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing](https://arxiv.org/abs/2406.08464)                                                                                                  | 06-2024  |
+| [DeepSeek-Prover: Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data](https://arxiv.org/abs/2405.14333)                                                                                                 | 05-2024  |
+| [Phi-3 Technical Report](https://arxiv.org/abs/2404.14219)                                                                                                                                                                | 04-2024  |
+| [OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset](https://proceedings.neurips.cc/paper_files/paper/2024/hash/3d5aa9a7ce28cdc710fbd044fd3610f3-Abstract-Datasets_and_Benchmarks_Track.html)              | 02-2024  |
+| [Rephrasing the Web: A Recipe for Compute and Data-Efficient Language Modeling](https://arxiv.org/abs/2401.16380)                                                                                                         | 01-2024  |
+| [Self-Play Fine-Tuning Converts Weak Language Models to Strong Language Models](https://arxiv.org/abs/2401.01335)                                                                                                         | 01-2024  |
+| [Beyond Human Data: Scaling Self-Training for Problem-Solving with Language Models](https://arxiv.org/abs/2312.06585)                                                                                                     | 12-2023  |
+| [Orca 2: Teaching Small Language Models How to Reason](https://arxiv.org/abs/2311.11045)                                                                                                                                  | 11-2023  |
+| [Knowledge-Infused Prompting: Assessing and Advancing Clinical Text Data Generation with Large Language Models](https://arxiv.org/abs/2311.00287)                                                                         | 11-2023  |
+| [HELPSTEER: Multi-attribute Helpfulness Dataset for STEERLM](https://arxiv.org/abs/2311.09528)                                                                                                                            | 11-2023  |
+| [CoAnnotating: Uncertainty-Guided Work Allocation between Human and Large Language Models for Data Annotation](https://arxiv.org/abs/2310.15638)                                                                          | 10-2023  |
+| [ULTRAFEEDBACK: Boosting Language Models with Scaled AI Feedback](https://arxiv.org/abs/2310.01377)                                                                                                                       | 10-2023  |
+| [Textbooks Are All You Need II: phi-1.5 technical report](https://arxiv.org/abs/2309.05463)                                                                                                                               | 09-2023  |
+| [MAMMOTH: BUILDING MATH GENERALIST MODELS THROUGH HYBRID INSTRUCTION TUNING](https://arxiv.org/abs/2309.05653)                                                                                                            | 09-2023  |
+| [METAMATH: BOOTSTRAP YOUR OWN MATHEMATICAL QUESTIONS FOR LARGE LANGUAGE](https://arxiv.org/abs/2309.12284)                                                                                                                | 09-2023  |
+| [DISC-MedLLM: Bridging General Large Language Models and Real-World Medical Consultation](https://arxiv.org/abs/2308.14346)                                                                                               | 08-2023  |
+| [AlpaGasus: Training A Better Alpaca with Fewer Data](https://arxiv.org/abs/2307.08701)                                                                                                                                   | 07-2023  |
+| [BEAVERTAILS: Towards Improved Safety Alignment of LLM via a Human-Preference Dataset](https://proceedings.neurips.cc/paper_files/paper/2023/hash/4dbb61cb68671edc4ca3712d70083b9f-Abstract-Datasets_and_Benchmarks.html) | 07-2023  |
+| [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644)                                                                                                                                                            | 06-2023  |
+| [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568)                                                                                                                 | 06-2023  |
+| [Orca: Progressive Learning from Complex Explanation Traces of GPT-4](https://arxiv.org/abs/2306.02707)                                                                                                                   | 06-2023  |
+| [ToolCoder: Teach Code Generation Models to use API search tools](https://arxiv.org/abs/2305.04032)                                                                                                                       | 05-2023  |
+| [TinyStories: how Small Can Language Models Be and Still Speak Coherent English?](https://arxiv.org/abs/2305.07759)                                                                                                       | 05-2023  |
+| [Can ChatGPT Reproduce Human-Generated Labels? A Study of Social Computing Tasks](https://arxiv.org/abs/2304.10145)                                                                                                       | 04-2023  |
+| [WizardLM: Empowering Large Language Models to Follow Complex Instructions](https://arxiv.org/abs/2304.12244)                                                                                                             | 04-2023  |
+| [Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data](https://arxiv.org/abs/2304.01196)                                                                                                    | 04-2023  |
+| [HuaTuo: Tuning LLaMA Model with Chinese Medical Knowledge](https://arxiv.org/abs/2304.06975)                                                                                                                             | 04-2023  |
+| [Instruction Tuning with GPT-4](https://arxiv.org/abs/2304.03277)                                                                                                                                                         | 04-2023  |
+| [Alpaca: A Strong, Replicable Instruction-Following Model](https://crfm.stanford.edu/2023/03/13/alpaca.html)                                                                                                              | 03-2023  |
+| [CHATGPT OUTPERFORMS CROWD WORKERS FOR TEXT-ANNOTATION TASKS](https://www.pnas.org/doi/abs/10.1073/pnas.2305016120)                                                                                                       | 03-2023  |
+| [AugGPT: Leveraging ChatGPT for Text Data Augmentation](https://ieeexplore.ieee.org/abstract/document/10858342/)                                                                                                          | 02-2023  |
+| [SELF-INSTRUCT: Aligning Language Models with Self-Generated Instructions](https://arxiv.org/abs/2212.10560)                                                                                                              | 12-2022  |
+| [CORE: A Retrieve-then-Edit Framework for Counterfactual Data Generation](https://arxiv.org/abs/2210.04873)                                                                                                               | 12-2022  |
+| [DISCO: Distilling Counterfactuals with Large Language Models](https://arxiv.org/abs/2212.10534)                                                                                                                          | 12-2022  |
+| [STaR: Self-Taught Reasoner: Bootstrapping Reasoning With Reasoning](https://research.google/pubs/star-self-taught-reasoner-bootstrapping-reasoning-with-reasoning/)                                                      | 03-2022  |
+## Agentic Workflows
+
+
+| Publication                                                                                                                                     | Date    |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| [BenchAgents: Automated Benchmark Creation With Agent Interaction](https://arxiv.org/abs/2410.22584)                                            | 10-2024 |
+| [The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation](https://arxiv.org/abs/2408.08688)  | 08-2024 |
+| [AgentInstruct: Toward Generative Teaching with Agentic Flows](https://arxiv.org/abs/2407.03502)                                                | 07-2024 |
+| [Arena Learning: Build Data Flywheel for LLMs Post-Training via Simulated Chatbot Arena](https://arxiv.org/abs/2407.10627)                      | 07-2024 |
+| [MALLM-GAN: Multi-Agent Large Language Model as Generative Adversarial Network for Synthesizing Tabular Data](https://arxiv.org/abs/2406.10521) | 06-2024 |
+| [Advancing LLM Reasoning Generalists With Preference Trees](https://arxiv.org/abs/2404.02078)                                                   | 04-2024 |
+| [LAB: Large-Scale Alignment for Chatbots](https://arxiv.org/abs/2403.01081)                                                                     | 03-2024 |
+| [Benchmark self-evolving: A multi-agent framework for dynamic llm evaluation](https://arxiv.org/abs/2402.11443)                                 | 02-2024 |
+| [Synthetic data (almost) from scratch: Generalized instruction tuning for language models](https://arxiv.org/abs/2402.13064)                    | 02-2024 |
+| [Orca-math: Unlocking the potential of SLMs in grade school math](https://arxiv.org/abs/2402.14830)                                             | 02-2024 |
+| [Learning From Mistakes Makes LLM a Better Reasoner](https://arxiv.org/abs/2310.20689)                                                          | 10-2023 |
+# Surveys
+
+| Publication                                                                                                                                          | Date    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| [Synthetic Data Generation Using Large Language Models: Advances in Text and Code](https://arxiv.org/pdf/2503.14023)                                 | 03-2025 |
+| [Recent Advances in Large Langauge Model Benchmarks against Data Contamination: From Static to Dynamic Evaluation](https://arxiv.org/abs/2502.17521) | 02-2025 |
+| [A Survey on Data Synthesis and Augmentation for Large Language Models](https://arxiv.org/abs/2410.12896)                                            | 10-2024 |
+| [Data Augmentation Using LLMs: Data Perspectives, Learning Paradigms, and Challenges](https://aclanthology.org/2024.findings-acl.97/)                | 08-2024 |
+| [On LLMs- Driven Synthetic Data Generation, Curation, and Evaluation: A Survey](https://arxiv.org/abs/2406.15126)                                    | 06-2024 |
+| [Best Practices and Lessons Learned on Synthetic Data](https://arxiv.org/abs/2404.07503)                                                             | 04-2024 |
+| [A Survey on Data Augmentation in the Large Model Era](https://arxiv.org/abs/2401.15422)                                                             | 01-2024 |
+| [Comprehensive Exploration of Synthetic Data Generation: A Survey](https://arxiv.org/abs/2401.02524)                                                 | 01-2024 |
+# Further Reading
+
+
+| Publication                                                                                                             | Date    | Notes                                                                                                                                                                                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Evaluating Language Models as Synthetic Data Generators](https://arxiv.org/abs/2412.03679)                             | 12-2024 | a benchmark that evaluates LLMs’ abilities to generate synthetic data by comparing outputs from multiple models and analyzing quality metrics (e.g., perplexity, difficulty), revealing that data-generation prowess doesn’t always match problem-solving strength |
+| [On the Diversity of Synthetic Data and its Impact on Training Large Language Models](https://arxiv.org/abs/2410.15226) | 10-2024 | Introduces a diversity metric (“LLM cluster-agent”) to quantify synthetic data variety, demonstrating that data diversity boosts model performance—especially during fine-tuning—even for smaller-scale LLMs                                                       |
+| [Scaling Laws of Synthetic Data for Language Models](https://arxiv.org/abs/2503.19551)                                  | 03-2025 | Presents _SynthLLM_, a framework revealing that synthetic pre-training data follows power-law scaling up to 300B tokens, and larger LLMs require fewer synthetic tokens to reach optimal performance                                                               |
+# Related Repositories
+
+- [Awesome Synthetic Datasets](https://github.com/davanstrien/awesome-synthetic-datasets): Practical resources for building synthetic text and vision datasets.
+- [LLM Synthetic Data](https://github.com/wasiahmad/Awesome-LLM-Synthetic-Data/tree/main): Papers, tools, and blogs on LLM-generated data.
+- [LLM-Datasets](https://github.com/mlabonne/llm-datasets/tree/main): Curated datasets and tools for LLM post-training.
