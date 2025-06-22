@@ -36,7 +36,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [A Survey on Data Augmentation in the Large Model Era](https://arxiv.org/abs/2401.15422)                                                             | 01-2024 | Reviews the landscape of data augmentation techniques, focusing on methods that are particularly effective for large-scale models.       |
 | [Comprehensive Exploration of Synthetic Data Generation: A Survey](https://arxiv.org/abs/2401.02524)                                                 | 01-2024 | Provides a thorough survey of synthetic data generation, covering its history, methods, applications, and future challenges.             |
 
-## 🧪 SDG Methods
+## 🧪 SDG Methods <a name="sdg-methods"></a>
 ### 🧠 Traditional Architectures: Single LLM without External tools
 
 | **Title**                                                                                                                                                                                                                 | **Publication Date** | **Overview **                                                                                                                                       |
