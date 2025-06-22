@@ -23,7 +23,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 - 🔗 [Related Repositories](#related-repositories)
 - 📝 [Citation](#citation)
 
-# Surveys
+## 📚 Surveys
 
 | Publication                                                                                                                                          | Date    | Overview                                                                                                                                 |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -36,8 +36,8 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [A Survey on Data Augmentation in the Large Model Era](https://arxiv.org/abs/2401.15422)                                                             | 01-2024 | Reviews the landscape of data augmentation techniques, focusing on methods that are particularly effective for large-scale models.       |
 | [Comprehensive Exploration of Synthetic Data Generation: A Survey](https://arxiv.org/abs/2401.02524)                                                 | 01-2024 | Provides a thorough survey of synthetic data generation, covering its history, methods, applications, and future challenges.             |
 
-# SDG Methods
-## Traditional Architectures: Single LLM without External tools
+## 🧪 SDG Methods
+### 🧠 Traditional Architectures: Single LLM without External tools
 
 | **Title**                                                                                                                                                                                                                 | **Publication Date** | **Overview **                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -84,7 +84,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [DISCO: Distilling Counterfactuals with Large Language Models](https://arxiv.org/abs/2212.10534)                                                                                                                          | 12-2022              | Proposes generating high-quality, large-scale counterfactual data by using a syntactic parser to guide a large language model.                      |
 | [STaR: Self-Taught Reasoner: Bootstrapping Reasoning With Reasoning](https://research.google/pubs/star-self-taught-reasoner-bootstrapping-reasoning-with-reasoning/)                                                      | 03-2022              | Introduces a method for a language model to learn reasoning by generating its own rationales for problems and then fine-tuning on the correct ones. |
 
-## Agentic Workflows
+### 🤖 Agentic Workflows
 
 
 | Publication                                                                                                                                     | Date    | Overview                                                                                                                                                                                                                                                                                                           |
@@ -102,7 +102,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [Orca-math: Unlocking the potential of SLMs in grade school math](https://arxiv.org/abs/2402.14830)                                             | 02-2024 | Creates a high-quality synthetic dataset of math problems to significantly improve the mathematical reasoning of smaller language models (SLMs).                                                                                                                                                                   |
 | [Learning From Mistakes Makes LLM a Better Reasoner](https://arxiv.org/abs/2310.20689)                                                          | 10-2023 | Improves a model's reasoning abilities by training it on data that includes common mistakes and provides corrective feedback.                                                                                                                                                                                      |
 
-# Further Reading
+## 📖 Further Reading
 
 
 | Publication                                                                                                             | Date    | Notes                                                                                                                                                                                                                                                              |
@@ -111,7 +111,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [On the Diversity of Synthetic Data and its Impact on Training Large Language Models](https://arxiv.org/abs/2410.15226) | 10-2024 | Introduces a diversity metric (“LLM cluster-agent”) to quantify synthetic data variety, demonstrating that data diversity boosts model performance—especially during fine-tuning—even for smaller-scale LLMs                                                       |
 | [Scaling Laws of Synthetic Data for Language Models](https://arxiv.org/abs/2503.19551)                                  | 03-2025 | Presents _SynthLLM_, a framework revealing that synthetic pre-training data follows power-law scaling up to 300B tokens, and larger LLMs require fewer synthetic tokens to reach optimal performance                                                               |
 
-# Related Repositories
+## 🔗 Related Repositories
 
 | [Awesome Synthetic Datasets](https://github.com/davanstrien/awesome-synthetic-datasets) | Practical resources for building synthetic text and vision datasets. |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -119,7 +119,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [LLM-Datasets](https://github.com/mlabonne/llm-datasets/tree/main):                     | Curated datasets and tools for LLM post-training.                    |
 
 
-## Citation
+## 📝 Citation
 
 If this work is helpful, please kindly cite as:
 
