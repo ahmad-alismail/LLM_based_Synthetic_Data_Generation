@@ -80,6 +80,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 
 | Publication                                                                                                                                     | Date    |
 | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| [Benchmarking Agentic Workflow Generation](https://arxiv.org/abs/2410.07869)                                            | 10-2024 |
 | [BenchAgents: Automated Benchmark Creation With Agent Interaction](https://arxiv.org/abs/2410.22584)                                            | 10-2024 |
 | [The Fellowship of the LLMs: Multi-Agent Workflows for Synthetic Preference Optimization Dataset Generation](https://arxiv.org/abs/2408.08688)  | 08-2024 |
 | [AgentInstruct: Toward Generative Teaching with Agentic Flows](https://arxiv.org/abs/2407.03502)                                                | 07-2024 |
