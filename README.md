@@ -1,6 +1,13 @@
 
-# A Survey of LLM-Based Methods for Synthetic Data Generation and the Rise of Agentic Workflows
-As AI systems become increasingly data-hungry, the need for high-quality datasets has never been greater. However, real-world data collection faces major challenges: scarcity, privacy constraints, and high acquisition costs. Synthetic Data Generation (SDG) offers a compelling alternative—creating artificial data that mimics real-world patterns without the associated drawbacks.
+<h1 align="center"> A Survey of LLM-Based Methods for Synthetic Data Generation and the Rise of Agentic Workflows </h1>
+
+<p align="center">
+  <a href="https://link.springer.com/chapter/10.1007/978-3-031-93418-6_9" target="_blank">📄Paper</a> •
+  <a href="https://notebooklm.google.com/notebook/0996ad02-eb14-4a6b-9df0-ca58b8ed5867/audio" target="_blank">🎧NotebookLM Audio</a>
+</p>
+
+As AI systems become increasingly data-hungry, the need for high-quality datasets has never been greater. However, real-world data collection faces major challenges: scarcity, privacy constraints, and high acquisition costs. Synthetic Data Generation (SDG) offers a compelling alternative—creating artificial data that mimics real-world patterns without the associated drawbacks. Beyond training, synthetic data also plays a crucial role in evaluation and benchmark creation, enabling controlled, diverse, and scalable testing environments that are often impractical to build with real data.
+
 
 > 📌 This repository complements the survey [*A Survey of LLM-Based Methods for Synthetic Data Generation and the Rise of Agentic Workflows*](https://link.springer.com/chapter/10.1007/978-3-031-93418-6_9) by Ahmad Alismail and Carsten Lanquillon. It is a continuously updated resource collecting references on LLM-based synthetic data generation—supporting ongoing learning and collaboration in the research community.  
 > 💡 If you’d like to contribute or suggest additions, feel free to open a pull request or issue!
@@ -110,3 +117,18 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [LLM Synthetic Data](https://github.com/wasiahmad/Awesome-LLM-Synthetic-Data/tree/main) | Papers, tools, and blogs on LLM-generated data.                      |
 | [LLM-Datasets](https://github.com/mlabonne/llm-datasets/tree/main):                     | Curated datasets and tools for LLM post-training.                    |
 
+
+## 🚩Citation
+
+If this work is helpful, please kindly cite as:
+
+```bibtex
+@inproceedings{alismail2025survey,
+  title={A Survey of LLM-Based Methods for Synthetic Data Generation and the Rise of Agentic Workflows},
+  author={Alismail, Ahmad and Lanquillon, Carsten},
+  booktitle={International Conference on Human-Computer Interaction},
+  pages={119--135},
+  year={2025},
+  organization={Springer}
+}
+```
