@@ -1,5 +1,5 @@
 
-# Synthetic Data
+# A Survey of LLM-Based Methods for Synthetic Data Generation and the Rise of Agentic Workflows
 As AI systems become increasingly data-hungry, the need for high-quality datasets has never been greater. However, real-world data collection faces major challenges: scarcity, privacy constraints, and high acquisition costs. Synthetic Data Generation (SDG) offers a compelling alternative—creating artificial data that mimics real-world patterns without the associated drawbacks.
 
 > 📌 This repository complements the survey [*A Survey of LLM-Based Methods for Synthetic Data Generation and the Rise of Agentic Workflows*](https://link.springer.com/chapter/10.1007/978-3-031-93418-6_9) by Ahmad Alismail and Carsten Lanquillon. It is a continuously updated resource collecting references on LLM-based synthetic data generation—supporting ongoing learning and collaboration in the research community.  
