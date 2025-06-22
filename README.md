@@ -12,7 +12,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 > 📌 This repository complements the survey [*A Survey of LLM-Based Methods for Synthetic Data Generation and the Rise of Agentic Workflows*](https://link.springer.com/chapter/10.1007/978-3-031-93418-6_9) by Ahmad Alismail and Carsten Lanquillon. It is a continuously updated resource collecting references on LLM-based synthetic data generation—supporting ongoing learning and collaboration in the research community.  
 > 💡 If you’d like to contribute or suggest additions, feel free to open a pull request or issue!
 
-
+<a name="top"></a>
 ## Table of Contents
 
 - 📚 **[Surveys](#surveys)**
@@ -35,6 +35,8 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [Best Practices and Lessons Learned on Synthetic Data](https://arxiv.org/abs/2404.07503)                                                             | 04-2024 | Summarizes key strategies, best practices, and lessons learned from enterprise applications of synthetic data generation.                |
 | [A Survey on Data Augmentation in the Large Model Era](https://arxiv.org/abs/2401.15422)                                                             | 01-2024 | Reviews the landscape of data augmentation techniques, focusing on methods that are particularly effective for large-scale models.       |
 | [Comprehensive Exploration of Synthetic Data Generation: A Survey](https://arxiv.org/abs/2401.02524)                                                 | 01-2024 | Provides a thorough survey of synthetic data generation, covering its history, methods, applications, and future challenges.             |
+
+[🔝 Back to Top](#top)
 
 ## 🧪 SDG Methods <a name="sdg-methods"></a>
 ### 🧠 Traditional Architectures: Single LLM without External Tools <a name="traditional-architectures-single-llm-without-external-tools"></a>
@@ -84,6 +86,8 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [DISCO: Distilling Counterfactuals with Large Language Models](https://arxiv.org/abs/2212.10534)                                                                                                                          | 12-2022              | Proposes generating high-quality, large-scale counterfactual data by using a syntactic parser to guide a large language model.                      |
 | [STaR: Self-Taught Reasoner: Bootstrapping Reasoning With Reasoning](https://research.google/pubs/star-self-taught-reasoner-bootstrapping-reasoning-with-reasoning/)                                                      | 03-2022              | Introduces a method for a language model to learn reasoning by generating its own rationales for problems and then fine-tuning on the correct ones. |
 
+[🔝 Back to Top](#top)
+
 ### 🤖 Agentic Workflows <a name="agentic-workflows"></a>
 
 
@@ -101,6 +105,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [Synthetic data (almost) from scratch: Generalized instruction tuning for language models](https://arxiv.org/abs/2402.13064)                    | 02-2024 | Uses a small set of human-written examples to bootstrap the generation of a large, diverse synthetic dataset for instruction tuning.                                                                                                                                                                               |
 | [Orca-math: Unlocking the potential of SLMs in grade school math](https://arxiv.org/abs/2402.14830)                                             | 02-2024 | Creates a high-quality synthetic dataset of math problems to significantly improve the mathematical reasoning of smaller language models (SLMs).                                                                                                                                                                   |
 | [Learning From Mistakes Makes LLM a Better Reasoner](https://arxiv.org/abs/2310.20689)                                                          | 10-2023 | Improves a model's reasoning abilities by training it on data that includes common mistakes and provides corrective feedback.                                                                                                                                                                                      |
+[🔝 Back to Top](#top)
 
 ## 📖 Further Reading <a name="further-reading"></a>
 
@@ -111,6 +116,8 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [On the Diversity of Synthetic Data and its Impact on Training Large Language Models](https://arxiv.org/abs/2410.15226) | 10-2024 | Introduces a diversity metric (“LLM cluster-agent”) to quantify synthetic data variety, demonstrating that data diversity boosts model performance—especially during fine-tuning—even for smaller-scale LLMs                                                       |
 | [Scaling Laws of Synthetic Data for Language Models](https://arxiv.org/abs/2503.19551)                                  | 03-2025 | Presents _SynthLLM_, a framework revealing that synthetic pre-training data follows power-law scaling up to 300B tokens, and larger LLMs require fewer synthetic tokens to reach optimal performance                                                               |
 
+[🔝 Back to Top](#top)
+
 ## 🔗 Related Repositories <a name="related-repositories"></a>
 
 | [Awesome Synthetic Datasets](https://github.com/davanstrien/awesome-synthetic-datasets) | Practical resources for building synthetic text and vision datasets. |
@@ -118,6 +125,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [LLM Synthetic Data](https://github.com/wasiahmad/Awesome-LLM-Synthetic-Data/tree/main) | Papers, tools, and blogs on LLM-generated data.                      |
 | [LLM-Datasets](https://github.com/mlabonne/llm-datasets/tree/main):                     | Curated datasets and tools for LLM post-training.                    |
 
+[🔝 Back to Top](#top)
 
 ## 📝 Citation <a name="citation"></a>
 
