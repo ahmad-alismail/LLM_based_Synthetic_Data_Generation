@@ -15,13 +15,13 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 
 ## Table of Contents
 
-- 📚 [Surveys](#surveys)
-- 🧪 [SDG Methods](#sdg-methods)
-  - 🧠 [Traditional Architectures: Single LLM without External Tools](#traditional-architectures-single-llm-without-external-tools)
-  - 🤖 [Agentic Workflows](#agentic-workflows)
-- 📖 [Further Reading](#further-reading)
-- 🔗 [Related Repositories](#related-repositories)
-- 📝 [Citation](#citation)
+- 📚 **[Surveys](#surveys)**
+- 🧪 **[SDG Methods](#sdg-methods)**
+  - 🧠 **[Traditional Architectures: Single LLM without External Tools](#traditional-architectures-single-llm-without-external-tools)**
+  - 🤖 **[Agentic Workflows](#agentic-workflows)**
+- 📖 **[Further Reading](#further-reading)**
+- 🔗 **[Related Repositories](#related-repositories)**
+- 📝 **[Citation](#citation)**
 
 ## 📚 Surveys
 
