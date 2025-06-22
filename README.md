@@ -105,6 +105,7 @@ As AI systems become increasingly data-hungry, the need for high-quality dataset
 | [Synthetic data (almost) from scratch: Generalized instruction tuning for language models](https://arxiv.org/abs/2402.13064)                    | 02-2024 | Uses a small set of human-written examples to bootstrap the generation of a large, diverse synthetic dataset for instruction tuning.                                                                                                                                                                               |
 | [Orca-math: Unlocking the potential of SLMs in grade school math](https://arxiv.org/abs/2402.14830)                                             | 02-2024 | Creates a high-quality synthetic dataset of math problems to significantly improve the mathematical reasoning of smaller language models (SLMs).                                                                                                                                                                   |
 | [Learning From Mistakes Makes LLM a Better Reasoner](https://arxiv.org/abs/2310.20689)                                                          | 10-2023 | Improves a model's reasoning abilities by training it on data that includes common mistakes and provides corrective feedback.                                                                                                                                                                                      |
+
 [🔝 Back to Top](#top)
 
 ## 📖 Further Reading <a name="further-reading"></a>
