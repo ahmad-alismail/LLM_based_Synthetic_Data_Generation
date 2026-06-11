@@ -3,7 +3,6 @@
 
 <p align="center">
   <a href="https://link.springer.com/chapter/10.1007/978-3-031-93418-6_9" target="_blank">📄Paper</a> •
-  <a href="https://notebooklm.google.com/notebook/0996ad02-eb14-4a6b-9df0-ca58b8ed5867/audio" target="_blank">🎧NotebookLM Audio</a>
 </p>
 
 As AI systems become increasingly data-hungry, the need for high-quality datasets has never been greater. However, real-world data collection faces major challenges: scarcity, privacy constraints, and high acquisition costs. Synthetic Data Generation (SDG) offers a compelling alternative—creating artificial data that mimics real-world patterns without the associated drawbacks. Beyond training, synthetic data also plays a crucial role in evaluation and benchmark creation, enabling controlled, diverse, and scalable testing environments that are often impractical to build with real data.
